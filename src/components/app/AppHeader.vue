@@ -47,23 +47,31 @@
   </div>
  </template>
     
-    <script setup>
+    <script setup lang="ts">
         import { onMounted } from 'vue'
         
         onMounted(() => {
             const btn = document.querySelector('button.mobile-menu-button');
             const menu = document.querySelector('.navigation-menu');
         
-            btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-            });
+            if (btn) {
+                btn.addEventListener('click', () => {
+                    if (menu) {
+                        menu.classList.toggle('hidden');
+                    }
+                });
+            }
         
             const dropdownToggle = document.querySelector('.dropdown-toggle');
             const dropdownMenu = document.querySelector('.dropdown-menu');
         
-            dropdownToggle.addEventListener('click', () => {
-            dropdownMenu.classList.toggle('hidden');
-            });
+            if (dropdownToggle) {
+                dropdownToggle.addEventListener('click', () => {
+                    if (dropdownMenu) {
+                        dropdownMenu.classList.toggle('hidden');
+                    }
+                });
+            }
         });
     </script>
     
