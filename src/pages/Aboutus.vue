@@ -6,7 +6,7 @@
 
     <div class="flex justify-center mt-4 ">
 
-           <img src="../../public/images/Erik Bilsted profil.jpg" class="w-50" />
+           <img src="/public/assets/images/Erik Bilsted profil.jpg" class="w-50" />
            <div class="ml-5 w-[50%]">
 
             <small class=" font-bold uppercase underline mt-2 text-gray-800 font-serif text-sm sm:text-sm md:text-sm lg:text-xl xl:text-[15px]">

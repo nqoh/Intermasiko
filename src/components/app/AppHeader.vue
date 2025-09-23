@@ -1,11 +1,11 @@
 <template>
   <div>
-      <div class=" relative bg-[url('http://localhost:5173/public/images/pic%20view%20c.jpg')] h-90 bg-cover bg-center">
+      <div class=" relative bg-[url('/public/assets/images/pic%20view%20c.jpg')] h-90 bg-cover bg-center">
         <div class="pt-5 flex justify-between items-center"> 
         <div class="ml-8 p-2 ">
-          <a href="#">
-            <img src="../../assets/images/inter2.gif" class="w-36" />
-          </a>
+          <router-link :to="{name:'Home'}">
+            <img src="/assets/images/inter2.gif" class="w-36" />
+          </router-link>
          </div>
 
          <div class="sm:hidden flex items-center mr-3">

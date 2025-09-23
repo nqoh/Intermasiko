@@ -5,7 +5,7 @@
     </h1>
 <div class="container mx-auto px-20 md:flex items-center justify-between p-5">
           
-   <img src="../assets/images/SB mennesker c.jpg" class="w-full md:w-72 lg:w-48  xl:w-48" />
+   <img src="/assets/images/SB mennesker c.jpg" class="w-full md:w-72 lg:w-48  xl:w-48" />
    <div class="">
    <h4 class=" px-4 py-2 font-normal text-gray-700">
    We are a privately owned company with activities within education, tourism and accommodation in South Africa.<br>

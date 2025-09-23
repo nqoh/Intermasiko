@@ -5,8 +5,8 @@
         <div class="">
             <div class="flex items-center w-full  ">
              <small class="text-sm">Copyright (c) 2025 INTERMASIKO &nbsp;</small>
-             <a href="#"><img src="../../assets/images/fbs.png" id="fb"></a>
-             <a href="#"><img src="../../assets/images/tws.png" id="fb"></a>
+             <a href="#"><img src="/assets/images/fbs.png" id="fb"></a>
+             <a href="#"><img src="/assets/images/tws.png" id="fb"></a>
             </div>
           </div>
 
