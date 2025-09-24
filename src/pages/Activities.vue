@@ -13,7 +13,7 @@
      <div class="w-full p-5 md:columns-1 sm:columns-1 lg:columns-3" v-for="item in items" :key="item.id">
              <div class="">
                
-             <img :src="`/public/assets/images/${item.image1}`" />
+             <img :src="`/assets/images/${item.image1}`" />
              </div>
 
              <div>
@@ -26,7 +26,7 @@
              </div>
 
              <div>
-                 <img :src="`/public/assets/images/${item.image2}`" />
+                 <img :src="`/assets/images/${item.image2}`" />
              </div>
        </div>
 
@@ -60,8 +60,8 @@
                       'degree. The students must choose a topic that allows them to compare curriculum and ways of',
                       'teaching at home and in South Africa. hey must show that they are able to understand the South African',
                       'way of teaching that incorporates tradition, culture and possibilities in South Africa.'],
-         image1:'pic Open Air.jpg',
-         image2:'pic Ngabayena b.jpg'      
+         image1:'pic Open Air.JPG',
+         image2:'pic Ngabayena b.JPG'      
      },
      {
          id:2,
@@ -69,15 +69,15 @@
          description:['These students observe, prepare, teach and evaluate their lessons under',
                       'our supervision and under the host schools supervision. The schools provide',
                       'the students with a diploma for their personal files.'],
-         image1:'pic Glenwood Junior.jpg',
-         image2:'pic Penzance Primary.jpg'               
+         image1:'pic Glenwood Junior.JPG',
+         image2:'pic Penzance Primary.JPG'               
      },
      {
          id:3,
          title:'3. Students study at University of KZN.',
          description:['We cooperate with the university and we are able to guide them in their study in South Africa.'],
-         image1:'pic Ngabayena a.jpg',
-         image2:'IMG_5084.jpg'
+         image1:'pic Ngabayena a.JPG',
+         image2:'IMG_5084.JPG'
      }
   ])
 </script>

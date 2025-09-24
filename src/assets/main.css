@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-.router-link-active{
+.routeActiveLink{
     @apply rounded-full bg-slate-300
 }
 
