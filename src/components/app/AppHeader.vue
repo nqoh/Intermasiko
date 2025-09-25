@@ -10,7 +10,7 @@
          </div>
 
          <div class="sm:hidden  h-min  mr-3 ">
-            <button type="button" class="mobile-menu-button">
+            <button type="button" @click="toogle" class="mobile-menu-button">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
               </svg>
@@ -19,19 +19,19 @@
           <div class="hidden sm:inline-flex font-serif navigation-menu z-40">
              <ul  class="flex-none sm:flex space-x-4 mr-2 text-sm items-center">
               <router-link v-slot="{isActive}" :to="{name:'Home'}">
-                <li class=" cursor-pointer py-1 px-3 " :class="isActive ? 'routeActiveLink' :''"> Home </li>
+                <li @click="toogle" class="cursor-pointer py-1 px-3 " :class="isActive ? 'routeActiveLink' :''"> Home </li>
               </router-link>
               <router-link v-slot="{isActive}" :to="{name:'Activities'}">
-              <li class=" cursor-pointer py-1 px-3 " :class="isActive ? 'routeActiveLink' :''">Activities</li>
+              <li @click="toogle" class=" cursor-pointer py-1 px-3 " :class="isActive ? 'routeActiveLink' :''">Activities</li>
               </router-link>
               <router-link v-slot="{isActive}" :to="{name:'Holidays'}">
-              <li class=" cursor-pointer py-1 px-3" :class="isActive ? 'routeActiveLink' :''">Holidays</li>
+              <li @click="toogle" class=" cursor-pointer py-1 px-3" :class="isActive ? 'routeActiveLink' :''">Holidays</li>
               </router-link>
               <router-link v-slot="{isActive}" :to="{name:'Aboutus'}"> 
-                <li class=" cursor-pointer py-1 px-3" :class="isActive ? 'routeActiveLink' :''">Aboutus</li>
+                <li @click="toogle" class=" cursor-pointer py-1 px-3" :class="isActive ? 'routeActiveLink' :''">Aboutus</li>
               </router-link>
               <router-link v-slot="{isActive}" :to="{name:'Contactus'}">
-                <li class=" cursor-pointer py-1 px-3" :class="isActive ? 'routeActiveLink' :''">Contactus</li>
+                <li @click="toogle" class=" cursor-pointer py-1 px-3" :class="isActive ? 'routeActiveLink' :''">Contactus</li>
               </router-link>
             </ul>
           </div>
@@ -47,31 +47,22 @@
  </template>
     
     <script setup lang="ts">
-        import { onMounted } from 'vue'
-        
-        onMounted(() => {
-            const btn = document.querySelector('button.mobile-menu-button');
-            const menu = document.querySelector('.navigation-menu');
-        
-            if (btn) {
-                btn.addEventListener('click', () => {
-                    if (menu) {
-                        menu.classList.toggle('hidden');
-                    }
-                });
-            }
-        
-            const dropdownToggle = document.querySelector('.dropdown-toggle');
-            const dropdownMenu = document.querySelector('.dropdown-menu');
-        
-            if (dropdownToggle) {
+
+      const toogle = ()=>{
+        const menu = document.querySelector('.navigation-menu');
+        if (menu) {
+            menu.classList.toggle('hidden');
+         }
+         const dropdownToggle = document.querySelector('.dropdown-toggle');
+         const dropdownMenu = document.querySelector('.dropdown-menu');
+         if (dropdownToggle) {
                 dropdownToggle.addEventListener('click', () => {
                     if (dropdownMenu) {
                         dropdownMenu.classList.toggle('hidden');
                     }
                 });
             }
-        });
+      }
     </script>
     
     <style scoped>

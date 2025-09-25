@@ -4,12 +4,12 @@
     ABOUTUS     
    </h1>
 
-    <div class="flex justify-center mt-4 ">
+    <div class=" md:flex md:justify-center mt-4 sm:row-end-2 p-2 ">
 
-           <img src="/public/assets/images/Erik Bilsted profil.jpg" class="w-50" />
-           <div class="ml-5 w-[50%]">
+           <img src="/public/assets/images/Erik Bilsted profil.jpg" />
+           <div class="ml-[3%]">
 
-            <small class=" font-bold uppercase underline mt-2 text-gray-800 font-serif text-sm sm:text-sm md:text-sm lg:text-xl xl:text-[15px]">
+            <small class="titleAbout">
                 Personal information
              </small>
 
@@ -19,7 +19,7 @@
                 Permanent Residence Permit in South Africa
              </p> <br>
 
-             <small class="font-bold uppercase underline text-gray-800 font-serif text-sm sm:text-sm md:text-sm lg:text-xl xl:text-[15px]">
+             <small class="titleAbout">
                 Education
              </small>
             
@@ -29,21 +29,14 @@
                 2001 Masters Degree in Mathematics and didactic at University of Pedagogic (Danmarks Pædagogiske Universitet)
              </p>
 
-      </div>    
+             <h1 class="titleAbout">
+              Positions
+             </h1>
+             <p class=" mt-2  text-gray-800 font-serif text-md">
+              I have worked as a teacher of mathematics in primary and secondary schools and as a lecturer of mathematics at University College – teachers training college.
+            </p>
 
-   </div>
-
-   <div class="mt-4 p-2">
-             
-   <h1 class="flex justify-center uppercase underline mt-2 text-gray-800 font-bold font-serif text-xl ">
-     Positions
-   </h1>
-
-   <p class=" mt-2 flex justify-center text-gray-800 font-serif text-md">
-    I have worked as a teacher of mathematics in primary and secondary schools and as a lecturer of mathematics at University College – teachers training college.
-   </p>
-
-   <div class="flex justify-center mt-5">
+            <div class="flex justify-center mt-5">
    <div class="text-gray-800 font-serif text-md space-y-2 ">
    <p>
     <b>1970 – 1990</b> &nbsp; Teacher at primary, secondary and upper schools
@@ -75,7 +68,13 @@
 </div>
 </div>
 
-   <h1 class="flex justify-center uppercase underline mt-2 text-gray-800 font-bold font-serif text-xl ">
+
+      </div>    
+
+   </div>
+
+   <div class=" p-2">
+   <h1 class="titleAbout flex justify-center ">
     Other skills
    </h1>
 

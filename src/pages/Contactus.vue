@@ -5,7 +5,7 @@
                Contactus     
             </h1>
                 
-   <form @submit.prevent="HandleSubmit" class="max-w-md mx-auto">
+   <form @submit.prevent="HandleSubmit" class="max-w-md mx-auto p-5">
       <FormInput name="Name" type="text" v-model="form.name"    :error="fromErrors.name"  />
       <FormInput name="Email" type="email" v-model="form.email" :error="fromErrors.email" />
      <div class="relative z-0 w-full mb-5 group">
